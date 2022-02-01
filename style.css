@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("snake.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 140px;
+    font-size: 29px;
+    font-weight: bold;
+    color: rgb(240, 248, 255);
+    font-family: 'Quintessential', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 40px;
+    right: 140px;
+    font-size: 29px;
+    font-weight: bold;
+    color: aliceblue;
+    font-family: 'Quintessential', cursive;
+}
+
+#board{
+    background: rgba(0,0,0,0.5);
+    width: 90vmin;
+    height: 92vmin;
+    display: grid;
+    border: 2px solid black;
+    padding: 5px 20px 15px 20px;
+    margin: auto;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(blue,aqua);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.snake{
+    background-color: blue;
+    border: .25vmin solid white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.food{
+    background: linear-gradient(yellow,green);
+    border: .25vmin solid white;
+}
