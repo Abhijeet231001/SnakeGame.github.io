@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,21 @@
     <title>The Amazing Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="body">
         <div id="scoreBox">Score: 0</div>
         <div id="hiscoreBox">High Score: 0</div>
         <div id="board"></div>
+        <button class="btn" id="reset">reset</button>
+        <select id="level">
+            <option value="easy">easy</option>
+            <option value="medium" selected>medium</option>
+            <option value="hard">hard</option>
+        </select>
+
     </div>
 </body>
 <script src="index.js"></script>
+
 </html>
