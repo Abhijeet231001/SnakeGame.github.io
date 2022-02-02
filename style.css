@@ -12,7 +12,9 @@
     background-attachment: fixed;
     min-height: 100vh;
     background-size: 100vw 100vh;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #scoreBox {
@@ -95,4 +97,13 @@
 
 #level option {
     -webkit-appearance: none;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    right: 28px;
+    font-size: 29px;
+    font-weight: bold;
+    color: aliceblue;
 }
